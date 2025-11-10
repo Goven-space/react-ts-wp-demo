@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "es6", // 编译后的目标JavaScript版本
+    "module": "commonjs", // 模块系统
+    "moduleResolution": "node", // 模块解析策略
+    "strict": true, // 开启严格模式
+    "esModuleInterop": true, // 兼容 CommonJS 模块
+    "skipLibCheck": true, // 跳过库文件检查
+    "forceConsistentCasingInFileNames": true, // 强制文件名一致性
+    "outDir": "./dist", // 输出目录
+    "rootDir": "./src", // 输入源代码目录
+    "baseUrl": "./", // 解析模块的基础路径
+    "paths": {
+      "@/*": ["./src/*"] // 配置路径别名
+    }
+  },
+  "include": ["src/**/*"], // 包含的文件
+  "exclude": ["node_modules"] // 排除的文件
+}

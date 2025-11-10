@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES5", // 编译为兼容 ES5 的 JavaScript 代码
+    "module": "ESNext", // 使用 ESNext 模块系统
+    "jsx": "react-jsx", // 支持 React 17+ 的 JSX 转换
+    "moduleResolution": "bundler", // 使用 Node.js 模块解析策略
+    "strict": true, // 开启严格模式
+    "esModuleInterop": true, // 启用 ES 模块和 CommonJS 之间的互操作性
+    "skipLibCheck": true, // 跳过库文件的类型检查
+    "noEmit": false, // 允许 TypeScript 输出文件
+    "baseUrl": "./", // 基准目录
+    "paths": {
+      "@/*": ["./src/*"] // 设置路径别名
+    }
+  },
+  "include": [
+    "src/**/*" // 只包括前端应用程序的 TypeScript 文件
+  ],
+  "exclude": [
+    "node_modules", // 排除 node_modules 目录
+    "webpack.config.js", // 排除 Webpack 配置文件
+    "**/*.spec.ts" // 排除测试文件
+  ]
+}
