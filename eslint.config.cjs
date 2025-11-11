@@ -1,8 +1,8 @@
-import { defineConfig } from 'eslint-define-config'
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
-import typescriptParser from '@typescript-eslint/parser'
+const { defineConfig } = require('eslint-define-config')
+const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin')
+const typescriptParser = require('@typescript-eslint/parser')
 
-export default defineConfig([
+module.exports = defineConfig([
   {
     // 将每个配置都放入对象中，替代 `extends`
     languageOptions: {
